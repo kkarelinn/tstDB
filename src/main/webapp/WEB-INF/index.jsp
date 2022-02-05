@@ -10,12 +10,14 @@
 <body>
 <h2>App</h2>
 <form:form action="/launch" method="get">
-    <% Object s = request.getAttribute("catch"); %>
     <label>
         <input type="text" name="name" placeholder="Введите ваше имя"/>
-        <c:if test="<%=(s!=null)%>">
+        <c:if test="${(exception!=null)}">
             <p style="color: red"> поле не должно быть пустым </p>
         </c:if>
+<%--        <c:if test="<%=(s!=null)%>">--%>
+<%--            <p style="color: red"> поле не должно быть пустым </p>--%>
+<%--        </c:if>--%>
 
     </label>
 

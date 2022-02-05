@@ -43,7 +43,7 @@ public class LaunchController {
     }
 
     @GetMapping()
-    public String start1(@NotBlank @Valid @RequestParam("name")  String name) {
+    public String start1( @RequestParam("name") @NotBlank String name) {
 
 
 //           if (bindingResult.hasErrors())
@@ -115,21 +115,11 @@ public class LaunchController {
         }
     }
 
-    @ExceptionHandler
+   @ExceptionHandler
    @GetMapping("/error")
     public String handle(ConstraintViolationException exception, Model model) {
-String catchCause = exception.getConstraintViolations()
-                .stream()
-                .map(ConstraintViolation::getMessage).findFirst().get();
-//        return error();
-        model.addAttribute("catch", catchCause);
-
+        model.addAttribute("exception", exception);
         return "index";
     }
-
-    private Map error(Object message) {
-        return Collections.singletonMap("error", message);
-    }
-
 
 }
