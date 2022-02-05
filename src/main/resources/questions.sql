@@ -1,0 +1,10 @@
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос первый', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос второй', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос третий', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос четвертый', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос пятый', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос шестой', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос седьмой', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос восьмой', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос девятый', 'good', 1);
+INSERT INTO questions (question, answer, points) VALUES ('Вопрос десятый', 'good', 1);
